@@ -49,16 +49,17 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await query.answer()
     if query.data == "PATH_STAGE":
         await menu(update, context)
+    elif query.data == "FORMAT_STAGE":
+        await path_format(update, context)
     elif "PATH" in query.data:
         USER_PATHS[query.from_user["id"]] = query.data
         await path_format(update, context)
-    else:
-        if query.data == "TEXT":
-            await send_text_excursion(query.from_user, update, context)
-        elif query.data == "AUDIO":
-            pass
-        else:
-            pass
+    elif query.data == "TEXT":
+        await send_text_excursion(query.from_user, update, context)
+    elif query.data == "AUDIO":
+        pass
+    elif query.data == "VIDEO":
+        pass
 
 
 async def info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -67,9 +68,17 @@ async def info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 async def send_text_excursion(user: User, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     exc = Excursions.excursions[USER_PATHS[user["id"]]]
-    await user.send_photo(open(exc["path_map"], "rb"), "Карта маршрута")
+    await user.send_photo(open(exc["path_map"], "rb"), f"Вот карта этого маршрута.\n\n"
+                                                            f"Длина: {exc["length"]}\n\n"
+                                                            f"Продолжительность: {exc["time"]}\n\n"
+                                                            f"Вайб маршрута:\n{exc["description"]}")
     for landmark in exc["landmarks"].values():
-        await user.send_photo(open(landmark["photo"], "rb"), landmark["text"])
+        await user.send_photo(open(landmark["photo"], "rb"), landmark["name"])
+        await user.send_message(landmark["text"])
+    await user.send_message(exc["final_message"])
+    keyboard = TelegramFeatures.back_to_format_keyboard
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    await update.effective_user.send_message(text="Хотите вернуться к форматам этой экскурсии?", reply_markup=reply_markup)
 
 
 def main():
