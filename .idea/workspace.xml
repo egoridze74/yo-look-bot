@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f19e267-1df7-454a-804c-ef056c2524fb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path2/l1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path2/l2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path2/l3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path2/l4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path3/l1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path3/l2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path3/l3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path3/l4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path3/path3_map.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path4/l1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path4/l2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path4/l3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path4/l4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path4/l5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/path4/l6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/path1/cafe/cafe1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/path2/cafe_photos/cafe1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/path2/cafe_photos/cafe2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/path3/cafe_photos/cafe1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/path3/cafe_photos/cafe2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/path3/cafe_photos/cafe3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/path4/cafe_photos/cafe1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/path4/cafe_photos/cafe2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/path4/cafe_photos/cafe3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/path4/cafe_photos/cafe4.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>

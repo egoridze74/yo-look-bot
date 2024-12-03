@@ -78,8 +78,7 @@ async def send_text_excursion(user: User, update: Update, context: ContextTypes.
     land_count = USER_PATHS_AND_LANDMARKS[user["id"]][1]
     cur_landmarks = list(exc.get("landmarks").values())
     if land_count == 0:
-        await user.send_photo(open(exc["path_map"], "rb"), f"Вот карта этого маршрута\.\n\n"
-                                                           f"*Длина:* {exc.get("length")}\n\n"
+        await user.send_photo(open(exc["path_map"], "rb"), f"*Длина:* {exc.get("length")}\n\n"
                                                            f"*Продолжительность:* {exc.get("time")}\n\n"
                                                            f"{exc.get("music")}\n\n"
                                                            f"*Вайб маршрута:*\n{exc.get("description")}",
@@ -107,8 +106,7 @@ async def send_audio_excursion(user: User, update: Update, context: ContextTypes
     land_count = USER_PATHS_AND_LANDMARKS[user["id"]][1]
     cur_landmarks = list(exc.get("landmarks").values())
     if land_count == 0:
-        await user.send_photo(open(exc["path_map"], "rb"), f"Вот карта этого маршрута\.\n\n"
-                                                           f"*Длина:* {exc.get("length")}\n\n"
+        await user.send_photo(open(exc["path_map"], "rb"), f"*Длина:* {exc.get("length")}\n\n"
                                                            f"*Продолжительность:* {exc.get("time")}\n\n"
                                                            f"{exc.get("music")}\n\n"
                                                            f"*Вайб маршрута:*\n{exc.get("description")}\n\n"
